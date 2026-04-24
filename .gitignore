@@ -1,0 +1,13 @@
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+
+logs/
+state/
+
+*.aiff
+*.mp3
+*.m4a
+
+.env

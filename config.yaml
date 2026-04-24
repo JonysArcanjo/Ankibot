@@ -1,0 +1,43 @@
+watch_folder: /Users/jonysarcanjo/Anki_baralhos_auto
+anki_connect_url: http://127.0.0.1:8765
+anki_auto_start: true
+anki_app_name: Anki
+anki_startup_wait_seconds: 20
+default_deck: Ingles
+default_note_type: Flaskcards
+unique_field: external_id
+deck_strategy: file_name
+processed_state_file: /Users/jonysarcanjo/Ankibot/state/processed_files.json
+log_file: /Users/jonysarcanjo/Ankibot/logs/ankibot.log
+archive_folder: /Users/jonysarcanjo/Ankibot/state/archive
+move_processed_files: false
+dry_run: false
+translation:
+  enabled: true
+  provider: google
+  source_column: frente
+  output_field: verso
+  source_language: auto
+  default_target_language: en
+audio:
+  enabled: true
+  provider: macos_say
+  voice: Samantha
+  rate_wpm: 175
+  media_prefix: ankibot
+supported_extensions:
+  - .csv
+  - .xlsx
+  - .numbers
+required_columns:
+  - external_id
+  - frente
+optional_columns:
+  - prompt
+  - answer
+  - verso
+  - audio
+  - tags
+  - note_type
+  - updated_at
+  - target_language

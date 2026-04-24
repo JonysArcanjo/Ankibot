@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.jonysarcanjo.ankibot</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/Users/jonysarcanjo/Ankibot/.venv/bin/python</string>
+        <string>/Users/jonysarcanjo/Ankibot/main.py</string>
+        <string>--config</string>
+        <string>/Users/jonysarcanjo/Ankibot/config.yaml</string>
+    </array>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/jonysarcanjo/Ankibot</string>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>6</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/jonysarcanjo/Ankibot/logs/launchd.out.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/jonysarcanjo/Ankibot/logs/launchd.err.log</string>
+</dict>
+</plist>
