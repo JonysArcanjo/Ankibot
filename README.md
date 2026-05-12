@@ -43,6 +43,7 @@ python3 -m venv .venv
 Edite [config.yaml](/Users/jonysarcanjo/Ankibot/config.yaml) se quiser trocar deck, tipo de nota ou pasta de entrada.
 
 Por padrao, ao rodar `./scripts/run.sh`, o projeto tenta abrir o Anki automaticamente se o `AnkiConnect` nao estiver ativo.
+Quando o Ankibot abre o Anki automaticamente, ele tambem tenta fechar o app ao terminar a execucao.
 
 Pasta monitorada por padrao:
 
@@ -101,7 +102,7 @@ Abra o Anki antes de rodar:
 ./scripts/run.sh
 ```
 
-Se o Anki estiver fechado, o script tenta abrir o app `Anki` sozinho e aguarda o `AnkiConnect` responder.
+Se o Anki estiver fechado, o script tenta abrir o app `Anki` sozinho, aguarda o `AnkiConnect` responder e fecha o Anki ao terminar.
 
 Se quiser rodar manualmente sem script:
 
